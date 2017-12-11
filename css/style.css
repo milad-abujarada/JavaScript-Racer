@@ -7,6 +7,7 @@ body {
 h1 {
 	display: inline-block;
 	margin-bottom: 0;
+	margin-top: 5%;
 	margin-left: 20%;
 	font-family: 'Press Start 2P', cursive;
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -103,12 +104,12 @@ h4 {
     }
 
     .pressL {
-    	margin-left: 20%;
+    	margin-left: 22%;
     	margin-right: 2%;
     }
 
     .pressA {
-    	margin-left: 32%;
+    	margin-left: 30%;
     }
 
     .instructions {
@@ -118,4 +119,43 @@ h4 {
     .terrain {
     	margin-top: 10%;
     }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        width: 960px;
+		
+    }
+
+    h1 {
+    	margin-top: 20%;
+    }
+
+    .greenTitle {
+    	margin-left: 10%;
+    }
+
+    .orangeTitle {
+    	margin-left: 19%;
+
+    }
+
+    .pressL {
+    	margin-left: 22%;
+    	margin-right: 2%;
+    }
+
+    .pressA {
+    	margin-left: 30%;
+    }
+
+    .instructions {
+    	margin-top: 5%;
+    }
+
+        .terrain {
+    	margin-top: 5%;
+    	margin-left: 1%;
+    }
+
 }
