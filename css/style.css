@@ -1,6 +1,6 @@
 body {
 	width: 1250px;
-	height: 590px;
+	height: 550px;
 	border: 1px solid black;
 }
 .main {
@@ -11,9 +11,10 @@ body {
 }
 .terrain {
 	width: 100%;
-	height: 50%;
-	border: 1px dashed red;
+	height: 55%;
+	border: 5px dashed #1f1e1e;
 	margin-top: 10%;
+	background-color: #00000038;
 }
 
 .tank1 {
@@ -21,7 +22,27 @@ body {
 	width: 100px;
 	position: relative;
 	left: 1%;
-	background-image: url('../images/yellowTank.png');
+	background-image: url('../images/orangeTank.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.tank2 {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	left: 1%;
+	top: 35%;
+	background-image: url('../images/greenTank.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.finishLine {
+	height: 100%;
+	width: 5%;
+	position: relative;
+	left: 95%;
+	bottom: 66%;
+	background-image: url('../images/finishLineMat.jpeg');
 }
