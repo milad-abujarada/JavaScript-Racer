@@ -32,6 +32,7 @@ h3 {
 	width: 95%;
 	height: 15%;
 	display: none;
+	padding: 0 10px;
 	position:absolute;
 	top: 30%;
 	left: 2%;
@@ -140,8 +141,25 @@ h3 {
     }
 
     .terrain {
-    	margin-top: 10%;
+    	margin-top: 20%;
     }
+
+    .rules {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Audiowide', cursive;
+	width: 95%;
+	height: 10%;
+	display: none;
+	padding: 0 10px;
+	position:absolute;
+	top: 30%;
+	left: 2%;
+	color: #547FB2;
+    border: 2px solid #547FB2;
+    border-radius: 5px;
+    line-height: 30px;
+}
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -177,8 +195,24 @@ h3 {
     }
 
         .terrain {
-    	margin-top: 5%;
+    	margin-top: 20%;
     	margin-left: 1%;
     }
+
+        .rules {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Audiowide', cursive;
+	width: 95%;
+	height: 10%;
+	display: none;
+	padding: 0 10px;
+	position:absolute;
+	top: 30%;
+	left: 2%;
+	color: #547FB2;
+    border: 2px solid #547FB2;
+    border-radius: 5px;
+    line-height: 30px;
 
 }
