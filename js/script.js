@@ -10,16 +10,18 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 	document.addEventListener('keypress', function(){ console.log(event.keyCode);
 		if (((event.keyCode === 108) || (event.keyCode === 76) ||(event.keyCode === 97) || (event.keyCode === 65))&& !winner){
 			if ((event.keyCode === 97) || (event.keyCode === 65)){
-				newPosition(movingDistance, "greenTank");
-			} else {
 				newPosition(movingDistance, "orangeTank");
+				addGlow("title1", "title2");
+			} else {
+				newPosition(movingDistance, "greenTank");
+				addGlow("title2", "title1");
 			}
 		}
 		if (winner){
 			if (winner === "greenTank"){
-				alert("Green Tank wins!");
+				alert("The Green Tank wins!");
 			} else {
-				alert("Orange Tank wins!")
+				alert("The Orange Tank wins!")
 			};
 			
 		};
@@ -50,6 +52,12 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 	if(currentMovingTank >= finishLine){
 		return true;
 	};
+	};
+
+	//addGlow addes glow on press A or press L on the screen  to show the player who pressed last 
+	function addGlow(title1, title2){
+		document.getElementById(title1).style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
+		document.getElementById(title2).style.textShadow = "";
 	};
 });
 

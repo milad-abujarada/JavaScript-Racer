@@ -1,19 +1,55 @@
 body {
 	width: 1250px;
 	height: 550px;
-	border: 1px solid black;
+	background-color: bisque;
+}
+
+h1 {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 20%;
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h4 {
+	font-family: 'Audiowide', cursive;
+	display: inline-block;
+	margin-left: 28%;
+	font-weight: bold
+}
+
+.instructions {
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+.pressA {
+	margin-right: 6%;
+	color: orange;
+}
+
+.pressL {
+	color: green;
+}
+
+.orangeTitle {
+	color: orange;
+}
+
+.greenTitle {
+	color: green;
 }
 .main {
 	width: 100%;
-	height: 100%;
-	border: 1px dotted blue;
-	
+	height: 100%;	
 }
 .terrain {
 	width: 100%;
 	height: 55%;
 	border: 5px dashed #1f1e1e;
-	margin-top: 10%;
+	margin-top: 5%;
 	background-color: #00000038;
 }
 
