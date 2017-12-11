@@ -1,5 +1,5 @@
 //making sure the DOM is ready before starting the DOM manipulation
-document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!");
+document.addEventListener("DOMContentLoaded", function(){console.log("JS works!!");
 	let movingDistance = initialPosition("orangeTank"); // inital position of the tanks
 	//getting the position of the finish line and the subtracting from it the width of the finish line
 	//to make sure a tank doesn't have to cross in full in order to be declared a winner
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 	console.log(finishLine);
 	let winner = "";
 	//adding event listener that only execut the call back if the pressed keys are either uppercase or lowercase L or A
-	document.addEventListener('keypress', function(){ console.log(event.keyCode);
+	document.addEventListener('keypress', function(){ 
 		if (((event.keyCode === 108) || (event.keyCode === 76) ||(event.keyCode === 97) || (event.keyCode === 65))&& !winner){
 			if ((event.keyCode === 97) || (event.keyCode === 65)){
 				newPosition(movingDistance, "orangeTank");
@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 		};
 	});
 
+	document.getElementById("rulesHeader").addEventListener("mousemove", function(){
+		document.getElementById("rulesParagraph").style.display = "block";
+
+	});
+
+	document.getElementById("rulesHeader").addEventListener("mouseout", function(){
+		document.getElementById("rulesParagraph").style.display = "none";
+
+	});	
 	//initialPosition receives an element and figuring out the location of that element in pixel terms
 	function initialPosition(tankOrFinishLine){
 	return parseInt(window.getComputedStyle(document.getElementById(tankOrFinishLine), null).getPropertyValue("left"));
