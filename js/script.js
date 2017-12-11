@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function(){console.log("JS works!!
 	let finishLine = initialPosition("finish") - parseInt(window.getComputedStyle(document.getElementById("finish"), null).getPropertyValue("width"));
 	console.log(finishLine);
 	let winner = "";
+	/*//show hint for the rules
+	document.addEventListener("mouseenter", function(){
+		document.getElementById("rulesHeader").title = "Me Me Me!!!";
+	});*/
 	//adding event listener that only execut the call back if the pressed keys are either uppercase or lowercase L or A
 	document.addEventListener('keypress', function(){ 
 		if (((event.keyCode === 108) || (event.keyCode === 76) ||(event.keyCode === 97) || (event.keyCode === 65))&& !winner){
@@ -68,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){console.log("JS works!!
 		document.getElementById(title1).style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
 		document.getElementById(title2).style.textShadow = "";
 	};
+
 });
 
 

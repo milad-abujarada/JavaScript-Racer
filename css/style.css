@@ -21,8 +21,15 @@ h3 {
 }
 
 .rulesTitle {
-	margin-left: 8%;
+	margin-left: 9%;
 	color:#547FB2;
+	border:2px solid #547FB2;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+.rulesTitle:hover{
+	background-color: #b2ceef;
 }
 
 .rules {
@@ -34,7 +41,7 @@ h3 {
 	display: none;
 	padding: 0 10px;
 	position:absolute;
-	top: 30%;
+	top: 32%;
 	left: 2%;
 	color: #547FB2;
     border: 2px solid #547FB2;
@@ -49,14 +56,14 @@ h3 {
 }
 
 .pressA {
-	margin-left: 28%;
+	margin-left: 27%;
 	margin-right: 6%;
 	color: orange;
 }
 
 .pressL {
 	color: green;
-	margin-left: 16%;
+	margin-left: 14%;
 }
 
 .orangeTitle {
@@ -106,6 +113,7 @@ h3 {
 	left: 95%;
 	bottom: 66%;
 	background-image: url('../images/finishLineMat.jpeg');
+	z-index: -1;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -194,25 +202,25 @@ h3 {
     	margin-top: 5%;
     }
 
-        .terrain {
+    .terrain {
     	margin-top: 20%;
     	margin-left: 1%;
     }
 
-        .rules {
-	font-size: 14px;
-	font-weight: bold;
-	font-family: 'Audiowide', cursive;
-	width: 95%;
-	height: 10%;
-	display: none;
-	padding: 0 10px;
-	position:absolute;
-	top: 30%;
-	left: 2%;
-	color: #547FB2;
-    border: 2px solid #547FB2;
-    border-radius: 5px;
-    line-height: 30px;
+    .rules {
+		font-size: 14px;
+		font-weight: bold;
+		font-family: 'Audiowide', cursive;
+		width: 95%;
+		height: 10%;
+		display: none;
+		padding: 0 10px;
+		position:absolute;
+		top: 30%;
+		left: 2%;
+		color: #547FB2;
+	    border: 2px solid #547FB2;
+	    border-radius: 5px;
+	    line-height: 30px;
 
 }
