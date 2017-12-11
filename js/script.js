@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!");
-	let movingDistance = initialPosition("orangeTank");
+document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!");//making sure the DOM is ready before starting the DOM manipulation
+	let movingDistance = initialPosition("orangeTank"); 
 	let finishLine = initialPosition("finish");
 	let winner = "";
 	document.addEventListener('keypress', function(){ console.log(event.keyCode);
@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 		};
 	});
 
+	//initialPosition receives an element and figuring out the location of that element in pixel terms
 	function initialPosition(tankOrFinishLine){
 	return parseInt(window.getComputedStyle(document.getElementById(tankOrFinishLine), null).getPropertyValue("left"));
 	};
 
+	//newPosition moves the tanks and call on checkForWin to check for a winner
 	function newPosition(movingDistance, tank){
 	let movingTank = document.getElementById(tank);
 	if(movingTank.style.left){
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!
 
 	};
 
+	//checkForWin checks if any of the tanks crossed the cross line
 	function checkForWin(finishLine, currentMovingTank){
 	if(currentMovingTank >= finishLine){
 		return true;
