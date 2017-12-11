@@ -17,25 +17,25 @@ body {
 	background-color: #00000038;
 }
 
-.tank1 {
-	height: 100px;
-	width: 100px;
-	position: relative;
-	left: 1%;
-	background-image: url('../images/orangeTank.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
+.tank1,
 .tank2 {
 	height: 100px;
 	width: 100px;
 	position: relative;
 	left: 1%;
-	top: 34%;
-	background-image: url('../images/greenTank.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.tank1 {
+
+	background-image: url('../images/orangeTank.png');
+
+}
+
+.tank2 {
+	top: 34%;
+	background-image: url('../images/greenTank.png');
 }
 
 .finishLine {

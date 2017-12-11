@@ -1,7 +1,12 @@
-document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!");//making sure the DOM is ready before starting the DOM manipulation
-	let movingDistance = initialPosition("orangeTank"); 
-	let finishLine = initialPosition("finish");
+//making sure the DOM is ready before starting the DOM manipulation
+document.addEventListener('DOMContentLoaded', function(){console.log("JS works!!");
+	let movingDistance = initialPosition("orangeTank"); // inital position of the tanks
+	//getting the position of the finish line and the subtracting from it the width of the finish line
+	//to make sure a tank doesn't have to cross in full in order to be declared a winner
+	let finishLine = initialPosition("finish") - parseInt(window.getComputedStyle(document.getElementById("finish"), null).getPropertyValue("width"));
+	console.log(finishLine);
 	let winner = "";
+	//adding event listener that only execut the call back if the pressed keys are either uppercase or lowercase L or A
 	document.addEventListener('keypress', function(){ console.log(event.keyCode);
 		if (((event.keyCode === 108) || (event.keyCode === 76) ||(event.keyCode === 97) || (event.keyCode === 65))&& !winner){
 			if ((event.keyCode === 97) || (event.keyCode === 65)){
