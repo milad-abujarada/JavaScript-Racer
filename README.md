@@ -6,7 +6,9 @@ creator:
     name: Alex White
     city: SF
 --->
-
+# My solution to the following challenge
+# Link to the final product 
+ https://milad-abujarada.github.io/assessment-2/
 # JavaScript Racer
 
 ## Introduction
