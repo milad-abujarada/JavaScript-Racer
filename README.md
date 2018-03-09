@@ -8,7 +8,8 @@ creator:
 --->
 # My solution to the following challenge
 # Link to the final product 
- https://milad-abujarada.github.io/assessment-2/
+https://milad-abujarada.github.io/JavaScript-Racer/
+
 # JavaScript Racer
 
 ## Introduction
